@@ -1,0 +1,114 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+@font-face {
+  font-family: 'myfont';
+  src: local('myfont'), url('./myfont.otf') format('opentype'); 
+   }
+header{
+    text-align: center;
+    height: 45px;
+    background-color:rgb(154, 11, 11);
+    
+
+}
+body{
+    background-color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 4vh;
+    justify-content: start;
+    overflow: hidden;/*it:to keep the image within the box*/
+    width:auto;
+    padding-left: 10vh;
+  }
+  .grid-item {
+    padding: 3vh;
+    font-size: 12vh;
+    width: auto;
+    height: auto;
+    overflow: hidden;/*it:to keep the image within the box*/
+    padding-top: 60px;
+  }
+  .grid-item img {
+    display: block;
+    transition: all ease 0.5s; /*it:for slowing the hover effect*/
+  }
+  .grid-item:hover img{
+    scale: 1.1; /*it:to add transition on hover on the album image*/
+  }
+  div{
+    color: rgb(154, 11, 11);
+    text-align: center;
+  }
+  article{
+    text-align: left;
+  }
+  #headcontent::-webkit-scrollbar {
+    display: none;
+  }
+  .description{
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+  #head{
+    color: black;
+    background-color: rgb(154, 11, 11);
+    font-family: monument;
+    text-shadow: 15px 0px 100px black ;  
+  }
+  #headcontent{
+    padding-top: 15px;
+    overflow:scroll;
+    overflow-x: hidden;
+    text-overflow:ellipsis;
+    height: 31vw ;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 9px 0px 100px  rgb(154, 11, 11);
+  }
+  h2{
+    text-align: end;
+  }
+  .watchnow{
+    color: black;
+    background-color: rgb(154, 11, 11);
+    font-family: monument;
+    text-align: center;
+  }
+  .download{
+    color: black;
+    background-color: rgb(154, 11, 11);
+    font-family: monument;
+    text-align: center;
+
+  }
+  a{
+    text-decoration: none;
+  }
+  a{
+    font-family: monument;
+    text-decoration: none;
+  }
+  a:link {
+    color: black;
+    font-size: large;
+    transition: all ease 0.7s;
+  }
+  a:visited{
+    color:black;
+  }
+  a:hover{
+    color:red;
+    transition: all ease 0.7s;
+  }
+  a::selection{
+    color: rgb(154, 11, 11);
+    background-color:black ;
+  }

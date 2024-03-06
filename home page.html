@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home Page</title>
+    <script src="homepage.js"></script>
+    <style>
+     @font-face {
+    font-family: 'myfont';
+    src: local('myfont'), url('./myfont.otf') format('opentype'); 
+     }
+      /*it means image transition property.*/
+     
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 4vh;
+        justify-content: start;
+        overflow: hidden;/*it:to keep the image within the box*/
+        padding-left: 12vh;
+      }
+      .grid-item {
+        padding: 3vh;
+        font-size: 12vh;
+        text-align: left;
+        width: auto;
+        height: auto;
+        overflow: hidden;/*it:to keep the image within the box*/
+        
+      }
+      .grid-item img {
+        display: block;
+        transition: all ease 0.5s; /*it:for slowing the hover effect*/
+
+      }
+      h1 {
+        color:rgb(154, 11, 11);
+        text-align: center;
+        font-family:monument;
+        text-shadow: 9px 0px 100px  rgb(154, 11, 11);/*to give text shadow text-shadow:x-axis y-axis blur color*/
+        letter-spacing: 0.7vw;
+      }
+      h1::selection{
+        color:black;
+        background-color:rgb(154, 11, 11);
+      }
+      h2{
+        font-family: monument;
+        text-align: center;
+      }
+      h2::selection{
+        color: rgb(154, 11, 11);
+        background-color: black;
+      }
+      .paragraph{
+        font-family: monument;
+        text-align: center;
+      }
+      .copyright{
+        font-family: monument;
+      }
+      nav {
+        align-content: center;
+        background-color: rgb(154, 11, 11);
+        color:black;
+       }
+      a{
+        font-family: monument;
+        text-decoration: none;
+      }
+      a:link {
+        color: black;
+        font-size: large;
+        transition: all ease 0.7s;
+      }
+      a:visited{
+        color:black;
+      }
+      a:hover{
+        color:red;
+        transition: all ease 0.7s;
+      }
+      a::selection{
+        color: rgb(154, 11, 11);
+        background-color:black ;
+      }
+      footer {
+            background-color: rgb(154, 11, 11);
+            color: solid black;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: monument;
+        }
+      .grid-item:hover img{
+        scale: 1.1; /*it:to add transition on hover on the album image*/
+      }
+      
+    </style>
+  </head>
+  <body style="background-color: black; color: rgb(154, 11, 11)">
+    <header style="background-color: black; color: rgb(154, 11, 11); font-size: 150%">
+      <h1>
+        RETROWATCH
+      </h1>
+    </header>
+
+    <nav class="navigation">
+      <a href="#">Home</a><b> | </b> <a href="#">About</a> <b> | </b>
+      <a href="#">Contact</a>
+    </nav>
+
+    <section id="main-content">
+      <article>
+        <p class="paragraph">You can watch all the below anime for free.Thank me later (:-D)</p>
+        <h2 style="background-color: rgb(154, 11, 11); color: black">FEATURED CONTENT</h2>
+      </article>
+    </section>
+    <div class="grid-container">
+      <div class="grid-item">
+        <a target="_blank" href="jjk selection page.html">
+          <img src="jjk.jpg" alt="Site 1" style="width: 70%" />
+        </a>
+      </div>
+      <div class="grid-item">
+        <a target="_blank" href="https://www.site2.com">
+          <img src="jjk.jpg" alt="Site 2" style="width: 70%" />
+        </a>
+      </div>
+      <div class="grid-item">
+        <a target="_blank" href="https://www.site3.com">
+          <img src="jjk.jpg" alt="Site 3" style="width: 70%" />
+        </a>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <a href="https://www.site1.com">
+          <img src="site1.jpg" alt="Site 4" style="width: 100%" />
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="https://www.site2.com">
+          <img src="site2.jpg" alt="Site 5" style="width: 100%" />
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="https://www.site3.com">
+          <img src="site3.jpg" alt="Site 6" style="width: 100%" />
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p style="color: black;"><b class="copyright">&copy; 2024 RETR0 WATCH. All rights reserved.</bb></p>
+    </footer>
+  </body>
+</html>
